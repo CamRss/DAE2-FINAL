@@ -1,0 +1,1039 @@
+{
+	"info": {
+		"_postman_id": "58381d6b-d4f9-4bef-b1c6-28e844226f67",
+		"name": "ColegioEuler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38470365"
+	},
+	"item": [
+		{
+			"name": "Profesor",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/profesor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"profesor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllCustom",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/profesor/custom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"profesor",
+								"custom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/profesor/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"profesor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": \"73426257\",\r\n    \"nombre\": \"Harumi\",\r\n    \"apellidopaterno\": \"Palomino\",\r\n    \"apellidomaterno\": \"Mendivil\",\r\n    \"fechanacimiento\": \"2002-09-11\",\r\n    \"correo\": \"haru.palominoz@example.com\",\r\n    \"telefono\": \"979077155\",\r\n    \"especialidad\": \"mathematics\",\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/profesor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"profesor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": 6,\r\n    \"dni\": \"73426257\",\r\n    \"nombre\": \"Harumi\",\r\n    \"apellidopaterno\": \"Palomino\",\r\n    \"apellidomaterno\": \"Mendivil\",\r\n    \"fechanacimiento\": \"2002-09-11\",\r\n    \"correo\": \"haru.palominoz@gmail.com\",\r\n    \"telefono\": \"979077155\",\r\n    \"especialidad\": \"program\",\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/profesor/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"profesor",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/profesor/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"profesor",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "horario",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/horario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"horario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllCustom",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/horario/custom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"horario",
+								"custom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/horario/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"horario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dias\": \"miercoles, viernes\",\r\n    \"horainicio\": \"16:00:00\",\r\n    \"horafin\": \"20:00:00\",\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/horario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"horario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": 6,\r\n    \"dias\": \"miercoles, jueves\",\r\n    \"horainicio\": \"16:00:00\",\r\n    \"horafin\": \"18:00:00\",\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/horario/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"horario",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/horario/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"horario",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sede",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/sede",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"sede"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllCustom",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/sede/custom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"sede",
+								"custom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/sede/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"sede",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"villa maria del triunfo\",\r\n    \"direccion\": \"av. el triunfo\",\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/sede",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"sede"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": 6,\r\n    \"nombre\": \"villa maria el salvador\",\r\n    \"direccion\": \"av. central\",\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/sede/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"sede",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/sede/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"sede",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "aula",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/aula",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"aula"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllCustom",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/aula/custom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"aula",
+								"custom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/aula/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"aula",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"piso\": \"7\",\r\n    \"descripcion\": \"clase 8\",\r\n    \"aforo\": 5,\r\n    \"estado\": true,\r\n    \"sede\": {\r\n        \"codigo\": 2,\r\n        \"nombre\": \"North Campus\",\r\n        \"direccion\": \"456 North Ave\",\r\n        \"estado\": true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/aula",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"aula"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": 6,\r\n    \"piso\": \"6\",\r\n    \"descripcion\": \"clase 6\",\r\n    \"aforo\": 20,\r\n    \"estado\": true,\r\n    \"sede\": {\r\n        \"codigo\": 2,\r\n        \"nombre\": \"North Campus\",\r\n        \"direccion\": \"456 North Ave\",\r\n        \"estado\": true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/aula/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"aula",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/aula/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"aula",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "curso",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/curso",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"curso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllCustom",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/curso/custom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"curso",
+								"custom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/curso/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"curso",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"comunicacion\",\r\n    \"descripcion\": \"mejora del habla y la escritura\",\r\n    \"modalidad\": \"v\",\r\n    \"fechainicio\": \"2024-02-01\",\r\n    \"fechafin\": \"2024-07-01\",\r\n    \"estado\": true,\r\n    \"aula\": {\r\n        \"codigo\": 2,\r\n        \"piso\": \"2\",\r\n        \"descripcion\": \"Room B\",\r\n        \"aforo\": 25,\r\n        \"estado\": true,\r\n        \"sede\": {\r\n            \"codigo\": 2,\r\n            \"nombre\": \"North Campus\",\r\n            \"direccion\": \"456 North Ave\",\r\n            \"estado\": true\r\n        }\r\n    },\r\n    \"profesor\": {\r\n        \"codigo\": 2,\r\n        \"dni\": \"23456789\",\r\n        \"nombre\": \"Maria\",\r\n        \"apellidopaterno\": \"Lopez\",\r\n        \"apellidomaterno\": \"Martinez\",\r\n        \"fechanacimiento\": \"1980-09-22\",\r\n        \"correo\": \"maria.lopez@example.com\",\r\n        \"telefono\": \"987123456\",\r\n        \"especialidad\": \"Physics\",\r\n        \"estado\": true\r\n    },\r\n    \"horario\": {\r\n        \"codigo\": 2,\r\n        \"dias\": \"Tuesday, Thursday\",\r\n        \"horainicio\": \"10:00:00\",\r\n        \"horafin\": \"12:00:00\",\r\n        \"estado\": true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/curso",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"curso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": 6,\r\n    \"nombre\": \"ingles\",\r\n    \"descripcion\": \"aprender nuevo idioma para abrir puertas\",\r\n    \"modalidad\": \"p\",\r\n    \"fechainicio\": \"2024-02-01\",\r\n    \"fechafin\": \"2024-07-01\",\r\n    \"estado\": true,\r\n    \"aula\": {\r\n        \"codigo\": 2,\r\n        \"piso\": \"2\",\r\n        \"descripcion\": \"Room B\",\r\n        \"aforo\": 25,\r\n        \"estado\": true,\r\n        \"sede\": {\r\n            \"codigo\": 2,\r\n            \"nombre\": \"North Campus\",\r\n            \"direccion\": \"456 North Ave\",\r\n            \"estado\": true\r\n        }\r\n    },\r\n    \"profesor\": {\r\n        \"codigo\": 2,\r\n        \"dni\": \"23456789\",\r\n        \"nombre\": \"Maria\",\r\n        \"apellidopaterno\": \"Lopez\",\r\n        \"apellidomaterno\": \"Martinez\",\r\n        \"fechanacimiento\": \"1980-09-22\",\r\n        \"correo\": \"maria.lopez@example.com\",\r\n        \"telefono\": \"987123456\",\r\n        \"especialidad\": \"Physics\",\r\n        \"estado\": true\r\n    },\r\n    \"horario\": {\r\n        \"codigo\": 1,\r\n        \"dias\": \"Monday, Wednesday\",\r\n        \"horainicio\": \"08:00:00\",\r\n        \"horafin\": \"10:00:00\",\r\n        \"estado\": true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/curso/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"curso",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/curso/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"curso",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "alumno",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/alumno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"alumno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllCustom",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/alumno/custom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"alumno",
+								"custom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/alumno/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"alumno",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": \"70412136\",\r\n    \"nombre\": \"patricia\",\r\n    \"apellidopaterno\": \"jimenez\",\r\n    \"apellidomaterno\": \"cardenas\",\r\n    \"fechanacimiento\": \"2009-07-18\",\r\n    \"telefono\": \"987654123\",\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/alumno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"alumno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": 6,\r\n    \"dni\": \"73426257\",\r\n    \"nombre\": \"Harumi\",\r\n    \"apellidopaterno\": \"Palomino\",\r\n    \"apellidomaterno\": \"Mendivil\",\r\n    \"fechanacimiento\": \"2009-09-11\",\r\n    \"telefono\": \"979077155\",\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/alumno/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"alumno",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/alumno/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"alumno",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "matricula",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/matricula",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"matricula"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllCustom",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/matricula/custom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"matricula",
+								"custom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/matricula/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"matricula",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\": \"2024-02-20 20:15:09\",\r\n    \"estado\": true,\r\n    \"alumno\": {\r\n        \"codigo\": 2,\r\n        \"dni\": \"76543210\",\r\n        \"nombre\": \"Lucia\",\r\n        \"apellidopaterno\": \"Ortiz\",\r\n        \"apellidomaterno\": \"Gomez\",\r\n        \"fechanacimiento\": \"1999-07-18\",\r\n        \"telefono\": \"987654123\",\r\n        \"estado\": true\r\n    },\r\n    \"curso\": {\r\n        \"codigo\": 2,\r\n        \"nombre\": \"Physics I\",\r\n        \"descripcion\": \"Basic principles of Physics\",\r\n        \"modalidad\": \"P\",\r\n        \"fechainicio\": \"2024-02-01\",\r\n        \"fechafin\": \"2024-07-01\",\r\n        \"estado\": true,\r\n        \"aula\": {\r\n            \"codigo\": 2,\r\n            \"piso\": \"2\",\r\n            \"descripcion\": \"Room B\",\r\n            \"aforo\": 25,\r\n            \"estado\": true,\r\n            \"sede\": {\r\n                \"codigo\": 2,\r\n                \"nombre\": \"North Campus\",\r\n                \"direccion\": \"456 North Ave\",\r\n                \"estado\": true\r\n            }\r\n        },\r\n        \"profesor\": {\r\n            \"codigo\": 2,\r\n            \"dni\": \"23456789\",\r\n            \"nombre\": \"Maria\",\r\n            \"apellidopaterno\": \"Lopez\",\r\n            \"apellidomaterno\": \"Martinez\",\r\n            \"fechanacimiento\": \"1980-09-22\",\r\n            \"correo\": \"maria.lopez@example.com\",\r\n            \"telefono\": \"987123456\",\r\n            \"especialidad\": \"Physics\",\r\n            \"estado\": true\r\n        },\r\n        \"horario\": {\r\n            \"codigo\": 2,\r\n            \"dias\": \"Tuesday, Thursday\",\r\n            \"horainicio\": \"10:00:00\",\r\n            \"horafin\": \"12:00:00\",\r\n            \"estado\": true\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/matricula",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"matricula"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": 6,\r\n    \"fecha\": \"2024-02-20 20:15:09\",\r\n    \"estado\": true,\r\n    \"alumno\": {\r\n        \"codigo\": 2,\r\n        \"dni\": \"76543210\",\r\n        \"nombre\": \"Lucia\",\r\n        \"apellidopaterno\": \"Ortiz\",\r\n        \"apellidomaterno\": \"Gomez\",\r\n        \"fechanacimiento\": \"1999-07-18\",\r\n        \"telefono\": \"987654123\",\r\n        \"estado\": true\r\n    },\r\n    \"curso\": {\r\n        \"codigo\": 2,\r\n        \"nombre\": \"Physics I\",\r\n        \"descripcion\": \"Basic principles of Physics\",\r\n        \"modalidad\": \"P\",\r\n        \"fechainicio\": \"2024-02-01\",\r\n        \"fechafin\": \"2024-07-01\",\r\n        \"estado\": true,\r\n        \"aula\": {\r\n            \"codigo\": 2,\r\n            \"piso\": \"2\",\r\n            \"descripcion\": \"Room B\",\r\n            \"aforo\": 25,\r\n            \"estado\": true,\r\n            \"sede\": {\r\n                \"codigo\": 2,\r\n                \"nombre\": \"North Campus\",\r\n                \"direccion\": \"456 North Ave\",\r\n                \"estado\": true\r\n            }\r\n        },\r\n        \"profesor\": {\r\n            \"codigo\": 2,\r\n            \"dni\": \"23456789\",\r\n            \"nombre\": \"Maria\",\r\n            \"apellidopaterno\": \"Lopez\",\r\n            \"apellidomaterno\": \"Martinez\",\r\n            \"fechanacimiento\": \"1980-09-22\",\r\n            \"correo\": \"maria.lopez@example.com\",\r\n            \"telefono\": \"987123456\",\r\n            \"especialidad\": \"Physics\",\r\n            \"estado\": true\r\n        },\r\n        \"horario\": {\r\n            \"codigo\": 1,\r\n            \"dias\": \"Monday, Wednesday\",\r\n            \"horainicio\": \"08:00:00\",\r\n            \"horafin\": \"10:00:00\",\r\n            \"estado\": true\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/matricula/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"matricula",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8097/ColegioEuler/matricula/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"ColegioEuler",
+								"matricula",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
